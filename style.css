@@ -124,4 +124,75 @@ nav {
   width: 100%;
   border-radius: 30px;
   margin-top: 4vw;
+  position: relative;
+}
+
+#hero-shape {
+  position: absolute;
+  width: 46vw;
+  height: 36vw;
+  /* border-radius: 50%; */
+  right: 0;
+  top: 65vh;
+  /* filter: blur(20px); */
+}
+
+#hero-1 {
+  background-color: #fe320a;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(10px);
+  position: absolute;
+}
+
+#hero-2 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe320a, #fe3f0a);
+  border-radius: 50%;
+  animation-name: animate2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  filter: blur(25px);
+  position: absolute;
+}
+
+#hero-3 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe320a, #fe3f0a);
+
+  border-radius: 50%;
+  position: absolute;
+  animation-name: animate1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  filter: blur(25px);
+}
+
+@keyframes animate1 {
+  from {
+    transform: translate(55%, -3%);
+  }
+
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+
+@keyframes animate2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+
+  to {
+    transform: translate(-20%, 30%);
+  }
 }
